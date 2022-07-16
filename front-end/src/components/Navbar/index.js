@@ -1,33 +1,37 @@
-import React from 'react';
-import {
-Nav,
-NavLink,
-Bars,
-NavMenu,
-} from './NavbarElements';
+import React from "react";
+import { Nav, NavLink, Bars, NavMenu } from "./NavbarElements";
 
 const Navbar = () => {
-return (
-	<>
-	<Nav>
-		<Bars />
+	return (
+		<>
+			<Nav>
+				<Bars />
 
-		<NavMenu>
-		<NavLink to='/about' activeStyle>
-			About
-		</NavLink>
-		<NavLink to='/interpretation' activeStyle>
-			Events
-		</NavLink>
-		<NavLink to='/prevention' activeStyle>
-			Annual Report
-		</NavLink>
-		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-		</NavMenu>
-	</Nav>
-	</>
-);
+				<NavMenu>
+					<NavLink to="/home" activeStyle>
+						Home
+					</NavLink>
+					<NavLink to="/about" activeStyle>
+						About
+					</NavLink>
+					<NavLink to="/interpretation" activeStyle>
+						Interpretation
+					</NavLink>
+					<NavLink to="/prevention" activeStyle>
+						Prevention
+					</NavLink>
+					<NavLink to="/visu" activeStyle>
+						Visu
+					</NavLink>
+					<NavLink to="/population" activeStyle>
+						Population
+					</NavLink>
+					{/* Second Nav */}
+					{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+				</NavMenu>
+			</Nav>
+		</>
+	);
 };
 
 export default Navbar;
