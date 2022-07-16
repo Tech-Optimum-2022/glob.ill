@@ -1,6 +1,6 @@
 import React from "react";
 
-const Interpretation = () => {
+const Home = () => {
 	return (
 		<div
 			style={{
@@ -9,9 +9,9 @@ const Interpretation = () => {
 				alignItems: "Right",
 				height: "100vh",
 			}}>
-			<h1>breakdown/interpretation of our data</h1>
+			<h1>home</h1>
 		</div>
 	);
 };
 
-export default Interpretation;
+export default Home;
