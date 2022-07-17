@@ -23,6 +23,9 @@ const Navbar = () => {
 					<NavLink to="/forestfires" activeStyle>
 						Forest Fires
 					</NavLink>
+					<NavLink to="/tornados" activeStyle>
+						Tornados
+					</NavLink>
 					<NavLink to="/about" activeStyle>
 						About
 					</NavLink>

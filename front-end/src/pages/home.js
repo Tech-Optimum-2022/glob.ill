@@ -6,7 +6,7 @@ const Home = () => {
 			<div
 				style={{
 					display: "flex",
-					justifyContent: "Center",
+					justifyContent: "center",
 					alignItems: "center",
 					height: "100vh",
 					backgroundImage: `url("https://i.redd.it/ufgqlfhtc2a61.jpg")`,
@@ -36,7 +36,7 @@ const Home = () => {
 						}}>
 						Welcome to our natural disaster maps.
 					</h1>
-				</div>{" "}
+				</div>
 			</div>
 			<div
 				style={{
@@ -64,9 +64,6 @@ const Home = () => {
 			</div>
 			<div
 				style={{
-					display: "flex",
-					justifyContent: "Center",
-					alignItems: "center",
 					height: "100vh",
 					backgroundImage: `url("https://content.fortune.com/wp-content/uploads/2020/08/GettyImages-1227473916.jpg?w=1024&h=682")`,
 					backgroundPosition: "center",
@@ -75,11 +72,31 @@ const Home = () => {
 				}}>
 				<div
 					style={{
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
 						width: "100vw",
 						height: "100vh",
 						backgroundColor: "rgba(0,0,0,0.65)",
+						textAlign: "center",
+						position: "center",
 					}}>
-					<p>test</p>
+					<div
+						style={{
+							position: "center",
+							width: "100vw",
+							height: "40vh",
+						}}>
+						<p
+							style={{
+								justifyContent: "center",
+								fontSize: "36px",
+								fontFamily: "Roboto",
+								color: "white",
+							}}>
+							text
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

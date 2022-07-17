@@ -1,6 +1,6 @@
 import Globe from "../components/TornadoGlobe";
 
-const Tornado = () => {
+const Tornados = () => {
 	return (
 		<div>
 			<Globe></Globe>
@@ -8,4 +8,4 @@ const Tornado = () => {
 	);
 };
 
-export default Tornado;
+export default Tornados;

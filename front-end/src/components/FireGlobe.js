@@ -57,29 +57,34 @@ export default function FireGlobe() {
 }
 
 function Slider() {
+	// // const [slider, setslider] = useState(1700)
+	// function () {
+	// 		selector.style.left = this.value + "%";
+	// 	};
 	return (
 		<div>
 			<input
 				style={{
 					width: "500px",
 					height: "15px",
-					background: "red",
+					background: "#233f63",
 				}}
 				max="2022"
 				min="1700"
 				type="range"
+				value="1861"
 			/>
 			<h3
 				style={{
 					fontFamily: "sans-serif",
-					color: "green",
+					color: "#5fa1f5",
 					paddingLeft: "45px",
 				}}>
 				1700{" "}
 				<span
 					style={{
 						fontFamily: "sans-serif",
-						color: "green",
+						color: "#5fa1f5",
 						paddingLeft: "300px",
 					}}>
 					{" "}

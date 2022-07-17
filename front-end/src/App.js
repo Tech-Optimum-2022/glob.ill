@@ -10,7 +10,7 @@ import Prevention from "./pages/prevention";
 import Visu from "./pages/visu";
 import Fires from "./pages/forestfires";
 import Earthquake from "./pages/earthquake";
-import Tornado from "./pages/tornado";
+import Tornados from "./pages/tornados";
 
 function App() {
 	return (
@@ -24,7 +24,7 @@ function App() {
 				<Route path="/visu" element={<Visu />} />
 				<Route path="/forestfires" element={<Fires />} />
 				<Route path="/earthquake" element={<Earthquake />} />
-				<Route path="/tornado" element={<Tornado />} />
+				<Route path="/tornados" element={<Tornados />} />
 			</Routes>
 		</Router>
 	);
