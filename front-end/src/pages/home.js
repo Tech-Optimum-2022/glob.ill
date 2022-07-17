@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../components/Navbar/index";
+// import Cards from "../components/card";
 
 const Home = () => {
 	return (
@@ -19,25 +19,25 @@ const Home = () => {
 					style={{
 						position: "center",
 						width: "100vw",
-						height: "20vh",
+						height: "25vh",
 						backgroundColor: "rgba(120, 120, 120, 0.75)",
+						justifyContent: "center",
+						display: "flex",
 					}}>
 					<h1
 						style={{
 							fontSize: 60,
 							fontFamily: "Bebas Neue",
-							//fontFamily: "Helvetica Neue",
 							color: "black",
-							// backgroundColor: "white",
-							borderColor: "black",
-							borderWidth: "10px",
 							transparent: true,
 							textAlign: "center",
-							opacity: 1,
-							marginTop: "40px",
+							alignItems: "center",
+							display: "flex",
+							margin: "0",
 						}}>
 						Welcome to our natural disaster maps.
 					</h1>
+					{/* <Cards></Cards> */}
 				</div>
 			</div>
 			<div
@@ -50,7 +50,6 @@ const Home = () => {
 				<h1
 					style={{
 						width: "100%",
-						fontSize: 60,
 						fontFamily: "Bebas Neue",
 						//fontFamily: "Helvetica Neue",
 						color: "black",
@@ -61,7 +60,8 @@ const Home = () => {
 						textAlign: "center",
 						opacity: 1,
 					}}>
-					Subtitle/something cool/button/statistic
+					The number of natural disasters has increased by a factor of 5 in the
+					last 50 years (World Meteorological Organization, 2021).
 				</h1>
 			</div>
 			<div
@@ -86,8 +86,9 @@ const Home = () => {
 					<div
 						style={{
 							position: "center",
-							width: "100vw",
+							width: "60vw",
 							height: "40vh",
+							display: "flex",
 						}}>
 						<p
 							style={{
@@ -95,15 +96,23 @@ const Home = () => {
 								fontSize: "36px",
 								fontFamily: "Roboto",
 								color: "white",
+								textAlign: "center",
+								alignItems: "center",
+								display: "flex",
+								margin: "0",
 							}}>
-							text
+							Glob.Ill is a data visualization website that tracks the history
+							and patterns of various natural disasters, including tornadoes,
+							forest fires, and earthquakes. It serves to remind us of the force
+							of nature, and the consequences we must suffer should we continue
+							to damage our planet.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div
 				style={{
-					height: "30vh",
+					height: "20vh",
 					backgroundColor: "steelblue",
 					color: "White",
 					fontSize: "20px",
@@ -112,47 +121,47 @@ const Home = () => {
 					<tr>
 						<td
 							style={{
-								paddingLeft: "35px",
-								paddingTop: "15px",
+								paddingLeft: "100px",
+								paddingTop: "20px",
 							}}>
 							About us
 						</td>
 						<td
 							style={{
-								paddingLeft: "100px",
-								paddingTop: "10px",
+								paddingLeft: "200px",
+								paddingTop: "20px",
 							}}>
 							Donate
 						</td>
 						<td
 							style={{
-								paddingLeft: "100px",
-								paddingTop: "10px",
+								paddingLeft: "200px",
+								paddingTop: "20px",
 							}}>
-							(fake) socials
+							Socials
 						</td>
 					</tr>
 					<tr>
 						<td
 							style={{
-								paddingLeft: "35px",
+								paddingLeft: "100px",
 								fontSize: "15px",
 							}}>
-							some text about us
+							Team of 5!
 						</td>
 						<td
 							style={{
-								paddingLeft: "100px",
+								paddingLeft: "200px",
 								fontSize: "15px",
 							}}>
 							Charities
 						</td>
 						<td
 							style={{
-								paddingLeft: "100px",
+								paddingLeft: "200px",
 								fontSize: "15px",
 							}}>
-							socials make up!
+							Instergram
 						</td>
 					</tr>
 				</table>
