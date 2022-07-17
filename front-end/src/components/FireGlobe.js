@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import fires from "../data/fires.json";
 import "../App.css";
 
-export default function PopulationGlobe() {
+export default function FireGlobe() {
 	const globeEl = useRef();
 
 	useEffect(() => {
@@ -57,25 +57,34 @@ export default function PopulationGlobe() {
 }
 
 function Slider() {
-	const [year, setYear] = useState(1700);
-	//setYear(year + 1);
 	return (
 		<div>
 			<input
 				style={{
 					width: "500px",
-					paddingLeft: "500px",
+					height: "15px",
+					background: "red",
 				}}
-				max={2022}
+				max="2022"
+				min="1700"
 				type="range"
-				onChange={setYear}
 			/>
 			<h3
 				style={{
 					fontFamily: "sans-serif",
 					color: "green",
+					paddingLeft: "45px",
 				}}>
-				170044444
+				1700{" "}
+				<span
+					style={{
+						fontFamily: "sans-serif",
+						color: "green",
+						paddingLeft: "300px",
+					}}>
+					{" "}
+					2022{" "}
+				</span>
 			</h3>
 		</div>
 	);

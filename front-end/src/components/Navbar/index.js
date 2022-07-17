@@ -11,20 +11,20 @@ const Navbar = () => {
 					<NavLink to="/home" activeStyle>
 						Home
 					</NavLink>
-					<NavLink to="/about" activeStyle>
-						About
-					</NavLink>
 					<NavLink to="/interpretation" activeStyle>
 						Interpretation
 					</NavLink>
 					<NavLink to="/prevention" activeStyle>
 						Prevention
 					</NavLink>
-					<NavLink to="/visu" activeStyle>
-						Visu
+					<NavLink to="/earthquake" activeStyle>
+						Earthquakes
 					</NavLink>
-					<NavLink to="/population" activeStyle>
-						Population
+					<NavLink to="/forestfires" activeStyle>
+						Forest Fires
+					</NavLink>
+					<NavLink to="/about" activeStyle>
+						About
 					</NavLink>
 					{/* Second Nav */}
 					{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

@@ -35,6 +35,19 @@ class GeslaDataset:
         ]
         self.meta.rename(columns={"file_name": "filename"}, inplace=True)
         self.data_path = data_path
+    
+    def file_strip(self, dataframe, null_value=-99):
+        "returns an pandas Dataframe object with all null lines stripped."
+        data = dataframe.reset_index().drop(["qc_flag","use_flag"], axis=1)
+        
+        drops = []
+        for indx, row in data.iterrows():
+            if row['sea_level'] <= null_value:
+                drops.append(indx)
+        
+        return data
+        
+        
 
     def file_to_pandas(self, filename, return_meta=True):
         """Read a GESLA data file into a pandas.DataFrame object. Metadata is

@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.abtpg {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  border-radius: 10px;
+  /* background-color: #61dafb; */
+  background-color: #ffffff;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+input::-webkit-slider-thumb {
+  background-color: #807cfa;
+}
