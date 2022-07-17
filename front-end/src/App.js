@@ -11,6 +11,7 @@ import Visu from "./pages/visu";
 import Fires from "./pages/forestfires";
 import Earthquake from "./pages/earthquake";
 import Tornados from "./pages/tornados";
+import GlobeGang from "./components/globeGang";
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 				<Route path="/forestfires" element={<Fires />} />
 				<Route path="/earthquake" element={<Earthquake />} />
 				<Route path="/tornados" element={<Tornados />} />
+				<Route path="/globegang" element={<GlobeGang />} />
 			</Routes>
 		</Router>
 	);

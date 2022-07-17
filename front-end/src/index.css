@@ -21,10 +21,16 @@ code {
 
 .centered {
   font-family: "Bebas Neue";
-  color: "white";
   width: 80vw;
+  height: 8vh;
   margin: 0 auto;
   display: flex;
   background-color: "pink";
-  color: black;
+  color: rgb(17, 16, 16);
+}
+
+img {
+  width: 100vw;
+  height: 60vw;
+  object-fit: center;
 }

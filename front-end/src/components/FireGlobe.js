@@ -4,7 +4,6 @@ import { useRef, useState } from "react";
 import fires from "../data/fires.json";
 import "../App.css";
 import { Slider as Sl } from "@material-ui/core";
-import Typography from "@material-ui/Typography";
 
 export default function FireGlobe() {
 	const globeEl = useRef();
@@ -49,31 +48,23 @@ export default function FireGlobe() {
 		setYearStart(newValue[0]);
 		setYearEnd(newValue[1]);
 	};
-	const marks = [
-		{
-			value: 1900,
-			label: "1900",
-		},
-		{
-			value: 2020,
-			label: "2020",
-		},
-	];
 
 	return (
 		<div>
 			<div class="centered">
-				<Typography id="input-slider" gutterBottom>
-					Volume
-				</Typography>
+				<h1>placeholder text</h1>
+			</div>
+			<div class="centered">
 				<Sl
+					style={{
+						color: "rgb(180,0,0)",
+					}}
 					getAriaLabel={() => "Temperature range"}
 					value={value}
 					onChange={handleChange}
-					valueLabelDisplay="auto"
+					valueLabelDisplay="on"
 					min={1900}
 					max={2020}
-					marks={marks}
 				/>
 			</div>
 

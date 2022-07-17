@@ -33,6 +33,7 @@ const Home = () => {
 							transparent: true,
 							textAlign: "center",
 							opacity: 1,
+							marginTop: "40px",
 						}}>
 						Welcome to our natural disaster maps.
 					</h1>
@@ -101,10 +102,64 @@ const Home = () => {
 			</div>
 			<div
 				style={{
-					height: "60vh",
+					height: "20vh",
 					backgroundColor: "steelblue",
+					color: "White",
+					fontSize: "20px",
 				}}>
-				<p>about section</p>
+				<table>
+					<tr>
+						<td
+							style={{
+								paddingLeft: "35px",
+								paddingTop: "15px",
+							}}>
+							About us
+						</td>
+						<td
+							style={{
+								paddingLeft: "500px",
+								paddingTop: "15px",
+							}}>
+							(fake) socials
+						</td>
+						<td
+							style={{
+								paddingLeft: "100px",
+								paddingTop: "15px",
+							}}>
+							Learn More
+						</td>
+					</tr>
+					<tr>
+						<td
+							style={{
+								paddingLeft: "35px",
+								paddingTop: "15px",
+								fontSize: "15px",
+							}}>
+							some text about us
+						</td>
+						<td
+							style={{
+								paddingLeft: "500px",
+								paddingTop: "15px",
+								fontSize: "15px",
+							}}>
+							socials make up!
+						</td>
+					</tr>
+					<tr>
+						<td
+							style={{
+								paddingLeft: "35px",
+								paddingTop: "25px",
+								fontSize: "15px",
+							}}>
+							<p>Copyright &copy; 2022</p>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	);
