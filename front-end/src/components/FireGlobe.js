@@ -61,11 +61,10 @@ export default function FireGlobe() {
 					value={value}
 					onChange={handleChange}
 					valueLabelDisplay="on"
-					min={1950}
-					max={2020}
+					min={1940}
+					max={2022}
 				/>
 			</div>
-
 			<Globe
 				bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 				globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
