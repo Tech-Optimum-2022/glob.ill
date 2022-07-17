@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "../components/Navbar/index";
 
 const Home = () => {
 	return (
@@ -102,7 +103,7 @@ const Home = () => {
 			</div>
 			<div
 				style={{
-					height: "20vh",
+					height: "30vh",
 					backgroundColor: "steelblue",
 					color: "White",
 					fontSize: "20px",
@@ -118,48 +119,53 @@ const Home = () => {
 						</td>
 						<td
 							style={{
-								paddingLeft: "500px",
-								paddingTop: "15px",
+								paddingLeft: "100px",
+								paddingTop: "10px",
 							}}>
-							(fake) socials
+							Donate
 						</td>
 						<td
 							style={{
 								paddingLeft: "100px",
-								paddingTop: "15px",
+								paddingTop: "10px",
 							}}>
-							Learn More
+							(fake) socials
 						</td>
 					</tr>
 					<tr>
 						<td
 							style={{
 								paddingLeft: "35px",
-								paddingTop: "15px",
 								fontSize: "15px",
 							}}>
 							some text about us
 						</td>
 						<td
 							style={{
-								paddingLeft: "500px",
-								paddingTop: "15px",
+								paddingLeft: "100px",
+								fontSize: "15px",
+							}}>
+							Charities
+						</td>
+						<td
+							style={{
+								paddingLeft: "100px",
 								fontSize: "15px",
 							}}>
 							socials make up!
 						</td>
 					</tr>
-					<tr>
-						<td
-							style={{
-								paddingLeft: "35px",
-								paddingTop: "25px",
-								fontSize: "15px",
-							}}>
-							<p>Copyright &copy; 2022</p>
-						</td>
-					</tr>
 				</table>
+				<p
+					style={{
+						paddingLeft: "35px",
+						paddingTop: "20px",
+						fontSize: "15px",
+						float: "right",
+						marginRight: "20px",
+					}}>
+					Copyright &copy; 2022
+				</p>
 			</div>
 		</div>
 	);

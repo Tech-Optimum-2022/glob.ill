@@ -2,7 +2,7 @@ import Globe from "../components/EarthQuakeGlobe";
 
 const Earthquake = () => {
 	return (
-		<div>
+		<div class="globe">
 			<Globe></Globe>
 		</div>
 	);

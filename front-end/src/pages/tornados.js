@@ -2,7 +2,7 @@ import Globe from "../components/TornadoGlobe";
 
 const Tornados = () => {
 	return (
-		<div>
+		<div class="globe">
 			<Globe></Globe>
 		</div>
 	);

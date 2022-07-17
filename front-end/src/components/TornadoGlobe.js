@@ -3,8 +3,12 @@ import Globe from "react-globe.gl";
 import { useRef, useState, useMemo } from "react";
 import "../App.css";
 import tornadoes from "../data/Storms.json"; //Storms is longer and stormData is shorter
+import { Slider as Sl } from "@material-ui/core";
 
 export default function TornadoGlobe() {
+	const [yearStart, setYearStart] = useState(1970);
+	const [yearEnd, setYearEnd] = useState(2022);
+
 	const data = [];
 	var [gData, setData] = useState([]);
 	for (var storm in tornadoes) {
@@ -12,7 +16,14 @@ export default function TornadoGlobe() {
 		const startLat = tornadoes[storm]["BEGIN_LON"];
 		const endLon = tornadoes[storm]["END_LON"];
 		const endLat = tornadoes[storm]["END_LAT"];
-		if (!startLon || !startLat || !endLat || !endLon) {
+		if (
+			!startLon ||
+			!startLat ||
+			!endLat ||
+			!endLon ||
+			parseInt(tornadoes[storm]["BEGIN_DATE"].substr(6, 9)) < yearStart ||
+			parseInt(tornadoes[storm]["BEGIN_DATE"].substr(6, 9)) > yearEnd
+		) {
 			continue;
 		} else {
 			data.push([
@@ -22,43 +33,33 @@ export default function TornadoGlobe() {
 		}
 	}
 	gData = data;
-	console.log(gData);
 
-	// const [rise, setRise] = useState(false);
-	// const N_PATHS = 1;
-	// const MAX_POINTS_PER_LINE = 20000;
-	// const MAX_STEP_DEG = 1;
-	// const MAX_STEP_ALT = 0.015;
-	// const gData = useMemo(
-	// () =>
-	// 	[...Array(N_PATHS).keys()].map(() => {
-	// let lat = (Math.random() - 0.5) * 90;
-	// let lng = (Math.random() - 0.5) * 360;
-	// let alt = 0;
-
-	// return [
-	// 	[lat, lng, alt],
-	// 	...[
-	// 		...Array(Math.round(Math.random() * MAX_POINTS_PER_LINE)).keys(),
-	// 	].map(() => {
-	// 		lat += (Math.random() * 2 - 1) * MAX_STEP_DEG;
-	// 		lng += (Math.random() * 2 - 1) * MAX_STEP_DEG;
-	// 		alt += (Math.random() * 2 - 1) * MAX_STEP_ALT;
-	// 		alt = Math.max(0, alt);
-
-	// 		return [lat, lng, alt];
-	// 	}),
-	// 			// ];
-	// 		}),
-	// 	[]
-	// );
+	const [value, setValue] = React.useState([1900, 2022]);
+	const handleChange = (Event, newValue) => {
+		setValue(newValue);
+		setYearStart(newValue[0]);
+		setYearEnd(newValue[1]);
+	};
 
 	return (
 		<div>
+			<div class="centered"></div>
+			<div class="centered">
+				<Sl
+					style={{
+						color: "rgb(180,0,0)",
+					}}
+					getAriaLabel={() => "Temperature range"}
+					value={value}
+					onChange={handleChange}
+					valueLabelDisplay="on"
+					min={1940}
+					max={2022}
+				/>
+			</div>
 			<Globe
 				globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
 				bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-				backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
 				pathsData={gData}
 				pathColor={() => ["rgba(0,0,255,0.6)", "rgba(255,0,0,0.6)"]}
 				pathDashLength={0.0}

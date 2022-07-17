@@ -26,13 +26,17 @@ const Interpretation = () => {
 			<div
 				style={{
 					display: "flex",
-					justifyContent: "Right",
-					alignItems: "Right",
-					height: "100vh",
+					justifyContent: "center",
+					alignItems: "center",
+					height: "auto",
+					backgroundColor: "#AAAAAA",
 				}}>
 				<p
 					style={{
-						margin: "auto",
+						fontSize: 25,
+						width: "80vw",
+						color: "black",
+						textAlign: "center",
 					}}>
 					The relationship between global warming and forest fire frequency is a
 					positive feedback loop. The higher the temperature, the more likely it

@@ -22,11 +22,11 @@ code {
 .centered {
   font-family: "Bebas Neue";
   width: 80vw;
-  height: 8vh;
+  height: 5vh;
   margin: 0 auto;
   display: flex;
   background-color: "pink";
-  color: rgb(17, 16, 16);
+  color: "rgba(17, 17, 17, 0)";
 }
 
 img {
@@ -34,3 +34,8 @@ img {
   height: 60vw;
   object-fit: center;
 }
+
+.globe {
+  margin-top: 50px;
+  display: flex;
+} 

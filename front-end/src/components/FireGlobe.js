@@ -51,9 +51,7 @@ export default function FireGlobe() {
 
 	return (
 		<div>
-			<div class="centered">
-				<h1>placeholder text</h1>
-			</div>
+			<div class="centered"></div>
 			<div class="centered">
 				<Sl
 					style={{
@@ -63,12 +61,13 @@ export default function FireGlobe() {
 					value={value}
 					onChange={handleChange}
 					valueLabelDisplay="on"
-					min={1900}
+					min={1950}
 					max={2020}
 				/>
 			</div>
 
 			<Globe
+				bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 				globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
 				enablePointerInteraction={false}
 				pointsData={gData}

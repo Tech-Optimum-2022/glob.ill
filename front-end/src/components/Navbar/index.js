@@ -4,7 +4,11 @@ import { Nav, NavLink, Bars, NavMenu } from "./NavbarElements";
 const Navbar = () => {
 	return (
 		<>
-			<Nav>
+			<Nav
+				style={{
+					//position: "fixed",
+					width: "100vw",
+				}}>
 				<Bars />
 
 				<NavMenu>
@@ -13,9 +17,6 @@ const Navbar = () => {
 					</NavLink>
 					<NavLink to="/interpretation" activeStyle>
 						Interpretation
-					</NavLink>
-					<NavLink to="/prevention" activeStyle>
-						Prevention
 					</NavLink>
 					<NavLink to="/earthquake" activeStyle>
 						Earthquakes
