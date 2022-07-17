@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import fires from "../data/fires.json";
 import "../App.css";
 import { Slider as Sl } from "@material-ui/core";
+import Typography from "@material-ui/Typography";
 
 export default function FireGlobe() {
 	const globeEl = useRef();
@@ -62,6 +63,9 @@ export default function FireGlobe() {
 	return (
 		<div>
 			<div class="centered">
+				<Typography id="input-slider" gutterBottom>
+					Volume
+				</Typography>
 				<Sl
 					getAriaLabel={() => "Temperature range"}
 					value={value}
@@ -81,46 +85,6 @@ export default function FireGlobe() {
 				pointColor="color"
 				ref={globeEl}
 			/>
-		</div>
-	);
-} //
-// handleOnChange = (e) => this.setState({ value: e.target.value });
-
-function Slider() {
-	// state = {
-	// value: 1861,
-	// };
-	return (
-		<div>
-			<input
-				style={{
-					width: "500px",
-					height: "15px",
-					background: "#233f63",
-				}}
-				max="2022"
-				min="1700"
-				type="range"
-				// value={this.state.value}
-				// onChange={this.handleOnChange}
-			/>
-
-			<h3
-				style={{
-					fontFamily: "sans-serif",
-					color: "#5fa1f5",
-					paddingLeft: "45px",
-				}}>
-				1700
-				<span
-					style={{
-						fontFamily: "sans-serif",
-						color: "#5fa1f5",
-						paddingLeft: "300px",
-					}}>
-					2022
-				</span>
-			</h3>
 		</div>
 	);
 }

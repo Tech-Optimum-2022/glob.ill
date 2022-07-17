@@ -75,7 +75,7 @@ const Home = () => {
 						display: "flex",
 						justifyContent: "center",
 						alignItems: "center",
-						width: "100vw",
+						width: "99vw",
 						height: "100vh",
 						backgroundColor: "rgba(0,0,0,0.65)",
 						textAlign: "center",
@@ -101,11 +101,11 @@ const Home = () => {
 			</div>
 			<div
 				style={{
-					display: "flex",
-					justifyContent: "Center",
-					alignItems: "center",
-					width: "100vw",
-				}}></div>
+					height: "60vh",
+					backgroundColor: "steelblue",
+				}}>
+				<p>about section</p>
+			</div>
 		</div>
 	);
 };

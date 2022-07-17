@@ -19,6 +19,7 @@ const Interpretation = () => {
 					<h1>Earthquakes</h1>
 					<img
 						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BoOP4LVxvQYDxU7weWef1OFpFeSTJQkE2A&usqp=CAU"
+						alt=""
 						style={{
 							width: "200px",
 							height: "200px",
@@ -56,6 +57,7 @@ const Interpretation = () => {
 					<h1>Forest Fires</h1>
 					<img
 						src="https://media.canadianunderwriter.ca/uploads/2022/05/wild-fire-and-burning-meadow-grass-picture-id872645958.jpg"
+						alt=""
 						style={{
 							width: "200px",
 							height: "200px",
