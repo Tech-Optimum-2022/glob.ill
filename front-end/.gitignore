@@ -6,7 +6,7 @@
 .pnp.js
 
 # data for globes are too large
-# src/data
+src/data
 
 # testing
 /coverage

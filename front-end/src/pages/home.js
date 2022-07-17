@@ -99,6 +99,13 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "Center",
+					alignItems: "center",
+					width: "100vw",
+				}}></div>
 		</div>
 	);
 };

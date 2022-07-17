@@ -57,6 +57,8 @@ export default function TornadoGlobe() {
 		<div>
 			<Globe
 				globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+				bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+				backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
 				pathsData={gData}
 				pathColor={() => ["rgba(0,0,255,0.6)", "rgba(255,0,0,0.6)"]}
 				pathDashLength={0.0}

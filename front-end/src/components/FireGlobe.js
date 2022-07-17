@@ -3,6 +3,7 @@ import Globe from "react-globe.gl";
 import { useRef, useState } from "react";
 import fires from "../data/fires.json";
 import "../App.css";
+import { Slider as Sl } from "@material-ui/core";
 
 export default function FireGlobe() {
 	const globeEl = useRef();
@@ -41,8 +42,37 @@ export default function FireGlobe() {
 	}
 	gData = data;
 
+	const [value, setValue] = React.useState([1900, 2020]);
+	const handleChange = (Event, newValue) => {
+		setValue(newValue);
+		setYearStart(newValue[0]);
+		setYearEnd(newValue[1]);
+	};
+	const marks = [
+		{
+			value: 1900,
+			label: "1900",
+		},
+		{
+			value: 2020,
+			label: "2020",
+		},
+	];
+
 	return (
 		<div>
+			<div class="centered">
+				<Sl
+					getAriaLabel={() => "Temperature range"}
+					value={value}
+					onChange={handleChange}
+					valueLabelDisplay="auto"
+					min={1900}
+					max={2020}
+					marks={marks}
+				/>
+			</div>
+
 			<Globe
 				globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
 				enablePointerInteraction={false}
@@ -51,16 +81,15 @@ export default function FireGlobe() {
 				pointColor="color"
 				ref={globeEl}
 			/>
-			<Slider />
 		</div>
 	);
-}
+} //
+// handleOnChange = (e) => this.setState({ value: e.target.value });
 
 function Slider() {
-	// // const [slider, setslider] = useState(1700)
-	// function () {
-	// 		selector.style.left = this.value + "%";
-	// 	};
+	// state = {
+	// value: 1861,
+	// };
 	return (
 		<div>
 			<input
@@ -72,23 +101,24 @@ function Slider() {
 				max="2022"
 				min="1700"
 				type="range"
-				value="1861"
+				// value={this.state.value}
+				// onChange={this.handleOnChange}
 			/>
+
 			<h3
 				style={{
 					fontFamily: "sans-serif",
 					color: "#5fa1f5",
 					paddingLeft: "45px",
 				}}>
-				1700{" "}
+				1700
 				<span
 					style={{
 						fontFamily: "sans-serif",
 						color: "#5fa1f5",
 						paddingLeft: "300px",
 					}}>
-					{" "}
-					2022{" "}
+					2022
 				</span>
 			</h3>
 		</div>
