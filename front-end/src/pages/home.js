@@ -1,44 +1,38 @@
 import React from "react";
+import "../components/typewriterEffect";
 // import Cards from "../components/card";
 
 const Home = () => {
 	return (
 		<div>
+			<div style={{display: "none"}} id="description_tags">
+				<span class="hidden_span"> Earthquakes</span>
+				<span class="hidden_span"> Forest Fires</span>
+				<span class="hidden_span"> Tornadoes</span>
+				<span class="hidden_span"> Data</span>
+			</div>
 			<div
 				style={{
-					display: "flex",
-					justifyContent: "center",
-					alignItems: "center",
 					height: "100vh",
-					backgroundImage: `url("https://i.redd.it/ufgqlfhtc2a61.jpg")`,
+					backgroundColor: "black",
 					backgroundPosition: "center",
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
+
 				}}>
-				<div
+				<img class="logo" src="https://i.imgur.com/sGzh6rM.png" alt="glob.il" />
+				<h1
 					style={{
-						position: "center",
-						width: "100vw",
-						height: "25vh",
-						backgroundColor: "rgba(120, 120, 120, 0.75)",
-						justifyContent: "center",
-						display: "flex",
+						fontSize: 60,
+						fontFamily: "Barlow",
+						color: "#968d95",
+						width: "99vw",
+						textAlign: "center",
+						alignItems: "center",
 					}}>
-					<h1
-						style={{
-							fontSize: 60,
-							fontFamily: "Bebas Neue",
-							color: "black",
-							transparent: true,
-							textAlign: "center",
-							alignItems: "center",
-							display: "flex",
-							margin: "0",
-						}}>
-						Welcome to our natural disaster maps.
-					</h1>
-					{/* <Cards></Cards> */}
-				</div>
+					Visualizing
+					<div class="typewriter" id="typewriter_div"></div>
+				</h1>
 			</div>
 			<div
 				style={{

@@ -27,11 +27,6 @@ const Navbar = () => {
 					<NavLink to="/tornados" activeStyle>
 						Tornados
 					</NavLink>
-					{/* <NavLink to="/about" activeStyle>
-						About
-					</NavLink> */}
-					{/* Second Nav */}
-					{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 				</NavMenu>
 			</Nav>
 		</>
